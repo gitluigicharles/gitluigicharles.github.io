@@ -4,18 +4,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Luigi Charles</title>
+
+        <!-- Inter font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
         <style type="text/css">
             body {
                 margin: 40px auto;
-                max-width: 650px;
+                max-width: 900px;
                 line-height: 1.6;
                 font-size: 18px;
                 color: #444;
                 padding: 0 10px;
+                position: relative;
+                min-height: 100vh;
+                font-family: "Inter", sans-serif;
             }
 
             h1, h2, h3 {
                 line-height: 1.2;
+                font-family: "Inter", sans-serif;
+            }
+
+            /* email bottom-left */
+            .email {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                font-size: 16px;
+                color: #444;
+            }
+
+            /* quote bottom-right */
+            .quote {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 16px;
+                color: #444;
+                font-style: italic;
+                text-align: right;
+                max-width: 300px;
             }
         </style>
     </head>
@@ -24,13 +53,25 @@
         <h1>Luigi Charles</h1>
 
         <h2>Thesis</h2>
-        <p>Founding Thesis with my brother and his friend to push the frontier of AI for scientific discovery.</p>
+        <p>
+            Founding <a href="https://thesislabs.ai" target="_blank">Thesis</a> with my brother and his friend
+            to push the frontier of AI for scientific discovery.
+        </p>
 
         <h2>Sphere</h2>
-        <p>Founded Sphere in my attic to optimize global money movement. Scaled it from 0 -> $1.5B in annual volume.</p>
+        <p>
+            Founded <a href="https://sphereft.com" target="_blank">Sphere</a> in my attic to optimize global
+            money movement. Scaled it from 0 -> $1.5B in annual volume.
+        </p>
 
-        <p>luigi@thesislabs.ai</p>
+        <!-- bottom-left email -->
+        <div class="email">
+            <a href="mailto:luigi@thesislabs.ai">luigi@thesislabs.ai</a>
+        </div>
 
-        <p><em>It's a dangerous business, stepping out your door…</em></p>
+        <!-- bottom-right quote -->
+        <div class="quote">
+            It's a dangerous business, stepping out your door…
+        </div>
     </body>
 </html>
